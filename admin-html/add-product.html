@@ -2,41 +2,78 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Trabalho Miligram - Novo Produto</title>
-	<link rel="icon" href="../img/miligram-logo.png" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
-	<!-- OS LINKS ABAIXO DEMORAM MUITO PARA CARREGAR -->
-	<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
-	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"> -->
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/add-product.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Trabalho Miligram - Novo Produto</title>
+    <link rel="icon" href="../img/miligram-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <!-- OS LINKS ABAIXO DEMORAM MUITO PARA CARREGAR -->
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/add-product.css">
 </head>
 
 <body>
-	<nav>
-		<ul class="row nav-top">
-			<li class="column column-15 column-offset-10">
-				<a href="products.html" class="nav-title">LOREM</a>
-			</li>
-			<li class="column column-50">
-				<input class="nav-search" type="text" placeholder="Pode procurar :)" id="searchField">
-			</li>
-			<li class="column column-15 column-offset-10">
-				<a href="../index.html">Sair</a>
-			</li>
-		</ul>
-		<ul class="nav-list">
-			<li class="nav-item"><a href="products.html">Produtos</a></li>
-			<li class="nav-item"><a href="contact.html">Contato</a></li>
-			<li id="nav-active" class="nav-item"><a href="add-product.html">Novo Produto</a></li>
-		</ul>
-	</nav>
+    <nav>
+        <ul class="row nav-top">
+            <li class="column column-15 column-offset-10">
+                <a href="products.html" class="nav-title">LOREM</a>
+            </li>
+            <li class="column column-50">
+                <input class="nav-search" type="text" placeholder="Pode procurar :)" id="searchField">
+            </li>
+            <li class="column column-15 column-offset-10">
+                <a href="../index.html">Sair</a>
+            </li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="products.html">Produtos</a></li>
+            <li class="nav-item"><a href="contact.html">Contato</a></li>
+            <li id="nav-active" class="nav-item"><a href="add-product.html">Novo Produto</a></li>
+        </ul>
+    </nav>
 
-	<div class="container">
-		Hello World!
-	</div>
+    <div class="container">
+        <form>
+            <fieldset>
+                <label for="nameField">Nome</label>
+                <input type="text" placeholder="Insira seu nome aqui." id="nameField">
+                <div class="row" style="overflow-y: hidden; overflow: hidden;">
+                    <div class="column column-25">
+                        <label for="nameField">Categoria</label>
+                        <select id="ageRangeField" style=>
+							<option value="none">Escolha a categoria.</option>
+							<option value="Esportes">Esportes</option>
+							<option value="Eletrónicos">Eletrónicos</option>
+							<option value="Games">Games</option>
+							<option value="Cozinha">Cozinha</option>
+						  </select>
+                        <label for="nameField">Quantidade</label>
+                        <input type="number" placeholder="Quantidade em estoque." id="nameField">
+                        <label for="nameField">Vender ?</label>
+
+                        <label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+                    </div>
+                    <div class="column column-25">
+                        <label for="nameField">Preço</label>
+                        <input type="number" placeholder="Preço por unidade." id="nameField">
+                        <label for="nameField">Quantidade a venda</label>
+                        <input type="number" placeholder="Quantidade a venda." id="nameField">
+                    </div>
+                    <div class="column column-50">
+                        <label for="nameField">Descrição</label>
+                        <textarea id="comment-field" placeholder="Insira a descrição do produto."></textarea>
+                    </div>
+                </div>
+
+                <input class="button-primary" type="submit" value="Cadastrar" style="margin-top: 2%;">
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
