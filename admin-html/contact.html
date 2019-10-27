@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Trabalho Miligram - Contato</title>
+    <link rel="icon" href="../img/miligram-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <!-- OS LINKS ABAIXO DEMORAM MUITO PARA CARREGAR -->
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="row nav-top">
+            <li class="column column-15 column-offset-10">
+                <a href="products.html" class="nav-title">LOREM</a>
+            </li>
+            <li class="column column-50">
+                <input class="nav-search" type="text" placeholder="Pode procurar :)" id="searchField">
+            </li>
+            <li class="column column-15 column-offset-10">
+                <a href="../index.html">Sair</a>
+            </li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="products.html">Produtos</a></li>
+            <li id="nav-active" class="nav-item"><a href="contact.html">Contato</a></li>
+            <li class="nav-item"><a href="add-product.html">Novo Produto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form>
+            <fieldset>
+                <label for="nameField">Nome</label>
+                <input type="text" placeholder="Insira seu nome aqui." id="nameField">
+                <label for="emailField">Email</label>
+                <input type="text" placeholder="Insira seu email para contato aqui." id="emailField">
+                <label for="subjectField">Assunto</label>
+                <select id="subjectField">
+                    <option value="Complaint">Fazer uma queixa</option>
+                    <option value="Compliment">Elogiar atendimento</option>
+                    <option value="Suggestion">Fazer uma sugestão</option>
+                    <option value="Other">Outro</option>
+                </select>
+                <label for="comment-field">Mensagem</label>
+                <textarea id="comment-field" placeholder="Insira o corpo da sua mensagem"></textarea>
+                <div class="float-right">
+                    <input type="checkbox" id="confirmField">
+                    <label class="label-inline" for="confirmField">Enviar uma cópia para você</label>
+                </div>
+                <input class="button-primary" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
