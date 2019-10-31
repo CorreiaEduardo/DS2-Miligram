@@ -17,15 +17,16 @@
 <body>
     <nav>
         <ul class="row nav-top">
-            <li class="column column-15 column-offset-10">
+            <li class="column column-10 column-offset-10">
                 <a href="products.html" class="nav-title">LOREM</a>
             </li>
-            <li class="column column-50">
+            <li class="column column-40 column-offset-10">
                 <input class="nav-search" type="text" placeholder="Pode procurar :)" id="searchField">
             </li>
-            <li class="column column-15 column-offset-10">
+            <li class="column column-10 column-offset-10">
                 <a href="../index.html">Sair</a>
             </li>
+            <li class="column column-10"></li>
         </ul>
         <ul class="nav-list">
             <li class="nav-item"><a href="products.html">Produtos</a></li>
@@ -38,39 +39,43 @@
         <form>
             <fieldset>
                 <label for="nameField">Nome</label>
-                <input type="text" placeholder="Insira seu nome aqui." id="nameField">
-                <div class="row" style="overflow-y: hidden; overflow: hidden;">
-                    <div class="column column-25">
-                        <label for="nameField">Categoria</label>
-                        <select id="ageRangeField" style=>
-							<option value="none">Escolha a categoria.</option>
-							<option value="Esportes">Esportes</option>
-							<option value="Eletrónicos">Eletrónicos</option>
-							<option value="Games">Games</option>
-							<option value="Cozinha">Cozinha</option>
-						  </select>
-                        <label for="nameField">Quantidade</label>
-                        <input type="number" placeholder="Quantidade em estoque." id="nameField">
-                        <label for="nameField">Vender ?</label>
+                <input type="text" placeholder="Insira o nome do produto aqui." id="nameField">
 
-                        <label class="switch">
-							<input type="checkbox">
-							<span class="slider round"></span>
-						</label>
-                    </div>
-                    <div class="column column-25">
-                        <label for="nameField">Preço</label>
-                        <input type="number" placeholder="Preço por unidade." id="nameField">
-                        <label for="nameField">Quantidade a venda</label>
-                        <input type="number" placeholder="Quantidade a venda." id="nameField">
-                    </div>
-                    <div class="column column-50">
-                        <label for="nameField">Descrição</label>
-                        <textarea id="comment-field" placeholder="Insira a descrição do produto."></textarea>
-                    </div>
+                <label for="ageRangeField">Categoria</label>
+                <select id="ageRangeField" style=>
+                    <option value="none">Escolha a categoria.</option>
+                    <option value="Esportes">Esportes</option>
+                    <option value="Eletrónicos">Eletrónicos</option>
+                    <option value="Games">Games</option>
+                    <option value="Cozinha">Cozinha</option>
+                </select>
+
+                <label for="quantityField">Quantidade</label>
+                <input type="number" min="1" placeholder="Quantidade em estoque." id="quantityField">
+
+                <label for="priceField">Preço</label>
+                <input type="number" min="0" placeholder="Preço por unidade." id="priceField">
+
+                <label for="quantityToSellField">Quantidade a venda</label>
+                <input type="number" min="0" placeholder="Quantidade a venda." id="quantityToSellField">
+
+                <label for="toSell">Promoção?</label>
+                <label class="switch">
+                    <input type="checkbox" id="toSell">
+                    <span class="slider round"></span>
+                </label>
+
+                <label for="discountField">Desconto em %</label>
+                <input type="number" min="1" placeholder="Insira o desconto em %" id="discountField">
+
+                <label id="deadLineLabel" for="deadLineField">Data de término da promoção</label>
+                <input class="datepicker" type="date" id="deadLineField">
+
+                <label for="text-area">Descrição</label>
+                <textarea id="text-area" class="text-area" placeholder="Insira a descrição do produto."></textarea>
+                <div>
+                    <input class="button-primary" type="submit" value="Cadastrar" style="margin-top: 2%;">
                 </div>
-
-                <input class="button-primary" type="submit" value="Cadastrar" style="margin-top: 2%;">
             </fieldset>
         </form>
     </div>

@@ -1,10 +1,38 @@
+.text-area{
+    min-height: 100px;
+    resize: vertical;
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  
+
+  label#deadLineLabel {
+    display: block;
+  }
+  input#deadLineField {
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 3px 5px;
+    width: 190px;
+    height: 38px;
+  }
+
 /* The switch - the box around the slider */
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 30px;
+    height: 17px;
 }
 
 
@@ -34,10 +62,10 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -52,16 +80,16 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
 }
 
 
 /* Rounded sliders */
 
 .slider.round {
-    border-radius: 34px;
+    border-radius: 17px;
 }
 
 .slider.round:before {
